@@ -3,6 +3,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
+const Constraint = Matter.Constraint;
 
 var bob1,bob2,bob3,bo4,bob5;
 var roof,ground;
@@ -18,7 +19,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 	  
-	ground = new Ground(400,100,800,)
+	ground = new Ground(400,700,800,)
 	//Create the Bodies Here.
 	
 	bob1 = new Bob(200,100);
