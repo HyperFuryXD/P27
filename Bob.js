@@ -5,9 +5,9 @@ class Bob{
     isStatic:false,
     restitution:0.3,
     friction:0.5,
-    density:1.0
+    density:0.7
   }
-  this.body = Bodies.circle(x,y,70,options);
+  this.body = Bodies.circle(x,y,50,options);
   World.add(world,this.body);
 }
 
@@ -17,9 +17,9 @@ display(){
     push();
     translate(pos.x, pos.y);
     rotate(angle);
-    rectMode(CENTER);
+    ellipseMode(RADIUS);
     fill("blue");
-   ellipse(0,0,70,70);
+   ellipse(0,0,50,50);
     pop();
 }
 }

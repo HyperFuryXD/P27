@@ -30,11 +30,11 @@ function setup() {
 	
 	roof = new Roof(400,100,800,20);
 
-	chain1 = new Rope(bob1.body,roof.body,-280,0);
-	chain2 = new Rope(bob2.body,roof.body,-140,0);
+	chain1 = new Rope(bob1.body,roof.body,-200,0);
+	chain2 = new Rope(bob2.body,roof.body,-100,0);
 	chain3 = new Rope(bob3.body,roof.body,0,0);
-	chain4 = new Rope(bob4.body,roof.body,140,0);
-	chain5 = new Rope(bob5.body,roof.body,280,0);
+	chain4 = new Rope(bob4.body,roof.body,100,0);
+	chain5 = new Rope(bob5.body,roof.body,200,0);
 
 	
 
@@ -59,15 +59,13 @@ function draw() {
    chain4.display();
    chain5.display();
    roof.display();
-
-   keyPressed();
    
 }
 
 function keyPressed(){
 
 	if(keyCode===UP_ARROW){
-      Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-40,y:40});
+      Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-100,y:-95});
 	}
 }
 
